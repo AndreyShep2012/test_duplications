@@ -25,6 +25,7 @@ import (
 )
 
 var conf models.Config
+var test int
 
 func init() {
 	exPath, err := helpers.GetExecutablePath()

@@ -62,10 +62,6 @@ func main() {
 	startService(service)
 }
 
-func ttttt(v, v1, v2, v3, v4, v5, v6, v7 string) int {
-	return 10
-}
-
 func initLogger() {
 	logger.RedirectLog(&logger.Conf{
 		Filename:   "log/log.log",

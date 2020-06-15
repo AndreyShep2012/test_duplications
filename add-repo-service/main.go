@@ -58,19 +58,8 @@ func main() {
 		AddService: as,
 	}
 
-	dddd(2, 3, 4, 5, 6, 7, 8, 8)
-	dddd2(2, 3, 4, 5, 6, 7, 8, 8)
-
 	service := api.NewService(serviceCfg)
 	startService(service)
-}
-
-func dddd(p, p1, p2, p3, p4, p5, p6, p7 int) int {
-	return 2
-}
-
-func dddd2(p, p1, p2, p3, p4, p5, p6, p7 int) int {
-	return 2
 }
 
 func initLogger() {

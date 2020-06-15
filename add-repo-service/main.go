@@ -58,6 +58,10 @@ func main() {
 		AddService: as,
 	}
 
+	if testFunction(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) == 9 {
+		log.Fatal("asdasdasd")
+	}
+
 	service := api.NewService(serviceCfg)
 	startService(service)
 }
@@ -69,6 +73,10 @@ func initLogger() {
 		MaxBackups: conf.CommonConfig.LogMaxBackups,
 		MaxAge:     conf.CommonConfig.LogMaxAge,
 	}, nil)
+}
+
+func testFunction(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12 int) int {
+	return 10
 }
 
 func initAddService(storage *storage.MongoDB) *addservice.Service {

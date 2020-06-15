@@ -58,7 +58,7 @@ func main() {
 		AddService: as,
 	}
 
-	if ttttt() == 12 {
+	if ttttt(12, 12, 12, 12, 12, 12, 12, 12) == 12 {
 		log.Fatal()
 	}
 
@@ -66,7 +66,7 @@ func main() {
 	startService(service)
 }
 
-func ttttt(v, v1, v2, v3, v4, v5, v6, v7 string) int {
+func ttttt(v, v1, v2, v3, v4, v5, v6, v7 int) int {
 	return 10
 }
 

@@ -78,6 +78,10 @@ func main() {
 		log.Fatal("as5asdasd")
 	}
 
+	if testFunction15(1, 2, 3, 4, 5, 6, 7, 8, 9) == 9 {
+		log.Fatal("as5asdasd")
+	}
+
 	service := api.NewService(serviceCfg)
 	startService(service)
 }
@@ -112,6 +116,10 @@ func testFunction14(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12 int) int {
 }
 
 func testFunction14(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12 int) int {
+	return 10
+}
+
+func testFunction15(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 int) int {
 	return 10
 }
 

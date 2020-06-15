@@ -62,6 +62,7 @@ func main() {
 	rrrrr(1, 2, 3, 4, 5, 6, 7, 8)
 	rrrrr3(1, 2, 3, 4, 5, 6, 7, 8)
 	rrrrr4(1, 2, 3, 4, 5, 6, 7, 8)
+	rrrrr5(1, 2, 3, 4, 5, 6, 7, 8)
 
 	service := api.NewService(serviceCfg)
 	startService(service)
@@ -80,6 +81,10 @@ func rrrrr3(p1, p2, p3, p4, p5, p6, p7, p8 int) int {
 }
 
 func rrrrr4(p1, p2, p3, p4, p5, p6, p7, p8 int) int {
+	return 1
+}
+
+func rrrrr5(p1, p2, p3, p4, p5, p6, p7, p8 int) int {
 	return 1
 }
 

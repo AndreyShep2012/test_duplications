@@ -58,23 +58,11 @@ func main() {
 		AddService: as,
 	}
 
-	if ttttt(12, 12, 12, 12, 12, 12, 12, 12) == 12 {
-		log.Fatal()
-	}
-
-	if ttttt2(12, 12, 12, 12, 12, 12, 12, 12) == 12 {
-		log.Fatal()
-	}
-
 	service := api.NewService(serviceCfg)
 	startService(service)
 }
 
-func ttttt(v, v1, v2, v3, v4, v5, v6, v7 int) int {
-	return 10
-}
-
-func ttttt2(v, v1, v2, v3, v4, v5, v6, v7 int) int {
+func ttttt(v, v1, v2, v3, v4, v5, v6, v7 string) int {
 	return 10
 }
 

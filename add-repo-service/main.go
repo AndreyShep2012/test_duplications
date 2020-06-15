@@ -58,19 +58,8 @@ func main() {
 		AddService: as,
 	}
 
-	rrrrr(12, 12, 12, 12, 12, 12, 1, 2)
-	rrrrr2(12, 12, 12, 12, 12, 12, 1, 2)
-
 	service := api.NewService(serviceCfg)
 	startService(service)
-}
-
-func rrrrr(p1, p2, p3, p4, p5, p6, p7, p8 int) int {
-	return 1
-}
-
-func rrrrr2(p1, p2, p3, p4, p5, p6, p7, p8 int) int {
-	return 1
 }
 
 func initLogger() {

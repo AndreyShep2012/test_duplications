@@ -58,30 +58,6 @@ func main() {
 		AddService: as,
 	}
 
-	if testFunction(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) == 9 {
-		log.Fatal("asdasdasd")
-	}
-
-	if testFunction12(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) == 9 {
-		log.Fatal("asdasdasd")
-	}
-
-	if testFunction13(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) == 9 {
-		log.Fatal("asdasdasd")
-	}
-
-	if testFunction14(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) == 9 {
-		log.Fatal("asdasdasd")
-	}
-
-	if testFunction15(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) == 9 {
-		log.Fatal("as5asdasd")
-	}
-
-	if testFunction15(1, 2, 3, 4, 5, 6, 7, 8, 9) == 9 {
-		log.Fatal("as5asdasd")
-	}
-
 	service := api.NewService(serviceCfg)
 	startService(service)
 }
@@ -93,34 +69,6 @@ func initLogger() {
 		MaxBackups: conf.CommonConfig.LogMaxBackups,
 		MaxAge:     conf.CommonConfig.LogMaxAge,
 	}, nil)
-}
-
-func testFunction(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12 int) int {
-	return 10
-}
-
-func testFunction12(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12 int) int {
-	return 10
-}
-
-func testFunction13(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12 int) int {
-	return 10
-}
-
-func testFunction13(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12 int) int {
-	return 10
-}
-
-func testFunction14(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12 int) int {
-	return 10
-}
-
-func testFunction14(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12 int) int {
-	return 10
-}
-
-func testFunction15(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10 int) int {
-	return 10
 }
 
 func initAddService(storage *storage.MongoDB) *addservice.Service {
